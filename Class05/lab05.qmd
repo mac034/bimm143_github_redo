@@ -1,0 +1,148 @@
+---
+title: "Lab5:DataViz with ggplot"
+author: "Matthew Chan (A18130675)"
+format: pdf
+toc: true
+
+---
+
+## Background
+
+There are lots of ways to make plots in R. These include so-called "base R" (like the `plot()`) and add on packages like **ggplot2**
+
+Let's make the same plot with these two graphics system. We can use the inbuilt `cars` dataset:
+
+```{r}
+head(cars)
+```
+
+With "base R" we can simply:
+```{r}
+plot(cars)
+```
+
+Now lets try ggplot. First ggplot needs to be installed with 'install.packages("ggplot2")'.
+
+>**N.B.** we never run an *install.packages()* in a code chunk otherwise we will reinstall needlessly everytime the document is rendered
+
+Everytime we want to use an addon package we must load it with a c all to `library()`
+```{r}
+library(ggplot2)
+ggplot(cars)
+```
+
+Every ggplot needs at least 3 things:
+
+1. The **data** i.e. stuff to plot as a data.frame
+2. The **aes** or aesthetics that map the ddata to the plot
+3. The **geom_** or geometry i.e. the plot type such as points, lines, etc
+
+```{r}
+ggplot(cars) + 
+  aes(x=speed, y=dist) + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  geom_point() +
+  labs(x="speed (MPH)", 
+       y="Distance (Feet)", 
+       title="Stopping Distance of Old Cars") +
+  theme_bw()
+  
+```
+
+
+## Gene Expression Plot
+
+Read some data in the effects of GLP-1 inhibitor (drug) on gene expression values:
+
+```{r}
+url <- "https://bioboot.github.io/bimm143_S20/class-material/up_down_expression.txt"
+genes <- read.delim(url)
+head(genes)
+```
+
+Version 1 plot - start simple by getting some ink on the page. 
+
+```{r}
+ggplot(genes) +
+  aes(Condition1, Condition2) +
+  geom_point(col = "blue", alpha = 0.2)
+  
+```
+
+
+Lets color by `state` up, down or no change. 
+```{r}
+table(genes$State)
+```
+
+```{r}
+ggplot(genes) +
+  aes(x=Condition1, y=Condition2, col=State) +
+  geom_point() + 
+  scale_color_manual(values = c( "red", "blue", "green")) +
+  labs(x="Control (No Drug)",
+         y= "Drug Treatment",
+         title = "Gene Expression Changes Upon Drug Treatment")
+  
+```
+
+## Going further with gapmider
+
+Here we explore the famous `gapmider` dataset with some custom plots.
+
+```{r}
+url <- "https://raw.githubusercontent.com/jennybc/gapminder/master/inst/extdata/gapminder.tsv"
+
+gapminder <- read.delim(url)
+head(gapminder)
+```
+
+> How many rows does this dataset have?
+
+```{r}
+nrow(gapminder)
+```
+> How many different continents are in this dataset? 
+
+```{r}
+table(gapminder$continent)
+```
+
+Version 1 plot gdpPercap vs LifeExp for all rows
+```{r}
+ggplot(gapminder) + 
+  aes(gdpPercap, lifeExp, col = continent)+
+  geom_point()
+```
+I want to see a plot for each continent - in ggplot lingo this is called "faceting"
+```{r}
+ggplot(gapminder) + 
+  aes(gdpPercap, lifeExp, col = continent)+
+  geom_point() + 
+  facet_wrap(~continent)
+```
+
+## First look at the dplyr package
+Another add-on package with a function called `filter()` that we want to use
+install the dplyr code with "install.packages("dplyr")"
+call it with "library(dplyr)"
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+filter(gapminder, year == 2007, country == "Ireland")
+```
+
+```{r}
+input <- filter (gapminder, year == 2007 | year == 1977)
+
+ggplot(input) + 
+  aes(gdpPercap, lifeExp, col = continent)+
+  geom_point() + 
+  facet_wrap(~year)
+```
+
+
+
