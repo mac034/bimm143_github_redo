@@ -1,4 +1,4 @@
-# bimm143_github
+# bimm143_github_redo
 
 My portfolio from [BIMM 143 W26](https://bioboot.github.io/bimm143_W26/) at UCSD
 
