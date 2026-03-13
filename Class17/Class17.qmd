@@ -1,0 +1,106 @@
+---
+title: "Class17"
+author: "Matthew Chan (A18130675)"
+format: pdf
+toc: true
+---
+
+## Background: Downstream analysis, use R and Bioc to explore the data set from the AWS computer. 
+
+```{r}
+library(tximport)
+
+# setup the folder and file-names to read
+folders <- dir(pattern="SRR21568*")
+samples <- sub("_quant", "", folders)
+files <- file.path( folders, "abundance.h5" )
+names(files) <- samples
+
+txi.kallisto <- tximport(files, type = "kallisto", txOut = TRUE)
+```
+
+```{r}
+head(txi.kallisto$counts)
+```
+
+# Transcripts for each sample
+```{r}
+colSums(txi.kallisto$counts)
+```
+
+# Transcripts detected in at least one sample
+```{r}
+sum(rowSums(txi.kallisto$counts)>0)
+```
+
+# Filter
+```{r}
+to.keep <- rowSums(txi.kallisto$counts) > 0
+kset.nonzero <- txi.kallisto$counts[to.keep,]
+```
+
+# No change over samples
+```{r}
+keep2 <- apply(kset.nonzero,1,sd)>0
+x <- kset.nonzero[keep2,]
+```
+
+## PCA
+```{r}
+pca <- prcomp(t(x), scale=TRUE)
+summary(pca)
+```
+
+# Plot
+```{r}
+plot(pca$x[,1], pca$x[,2],
+     col=c("blue","blue","red","red"),
+     xlab="PC1", ylab="PC2", pch=16)
+```
+
+# ggplot
+```{r}
+library(ggplot2)
+library(ggrepel)
+
+mycols <- c("blue","blue","red","red")
+
+ggplot(pca$x) +
+  aes(PC1, PC2, label=rownames(pca$x)) +
+  geom_point( col=mycols ) +
+  geom_text_repel( col=mycols ) +
+  theme_bw()
+```
+
+## Differential - Expression analysis
+
+```{r}
+library(DESeq2)
+
+sampleTable <- data.frame(condition = factor(rep(c("control", "treatment"), each = 2)))
+rownames(sampleTable) <- colnames(txi.kallisto$counts)
+
+dds <- DESeqDataSetFromTximport(txi.kallisto,
+                                sampleTable, 
+                                ~condition)
+```
+
+
+```{r}
+dds <- DESeq(dds)
+res <- results(dds)
+head(res)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

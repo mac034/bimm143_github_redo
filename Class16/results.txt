@@ -1,0 +1,181 @@
+BLASTP 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: zebrafish.1.protein.faa
+           56,203 sequences; 46,657,243 total letters
+
+
+
+Query= NP_001230020.1 uncharacterized protein LOC381272 isoform 2 [Mus
+musculus]
+
+Length=78
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.132    0.395    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 1182354030
+
+
+Query= NP_001177947.1 keratin associated protein 22-2 [Mus musculus]
+
+Length=67
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.161    0.583    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 1153175920
+
+
+Query= NP_034603.2 sarcoplasmic reticulum histidine-rich calcium-binding
+protein precursor [Mus musculus]
+
+Length=480
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XP_073789949.1 uncharacterized protein mgab isoform X7 [Danio rerio]  35.8    0.23 
+XP_073789948.1 uncharacterized protein mgab isoform X6 [Danio rerio]  35.8    0.23 
+XP_073791197.1 voltage-dependent N-type calcium channel subunit a...  32.0    3.9  
+XP_073772162.1 calcium channel, voltage-dependent, P/Q type, alph...  31.2    6.6  
+
+
+>XP_073789949.1 uncharacterized protein mgab isoform X7 [Danio 
+rerio]
+Length=1457
+
+ Score = 35.8 bits (81),  Expect = 0.23, Method: Composition-based stats.
+ Identities = 46/247 (19%), Positives = 93/247 (38%), Gaps = 9/247 (4%)
+
+Query  166   GEEDDDDDGGEEEERVDVMEDSDDNEHQVHGHQSHSKERDELHHAHSHRHQGHSDDDDDD  225
+              EE D     EE ++    E  D N    +  Q++  E+   ++      Q +  D  D 
+Sbjct  794   AEEPDQTIPAEEPDQNKPTEKPDQNNPTKYPDQNNPTEKPAQNNPAEKPDQNNPTDKPDQ  853
+
+Query  226   GVSTEHGHQAHRYQDHEEEDDGD-SDEDSHTHR-VQGREDENDDEDGDSGEYRHHTQDHQ  283
+                TE   Q +  +  ++ +  +  D+++ T    Q    E  D++  +       +  Q
+Sbjct  854   NKPTEKPAQNNPAEKPDQNNPTEYPDQNNPTEEPAQNNPAEKPDQNNPT------EKPDQ  907
+
+Query  284   GHNEEQDDDDDDDDDDEDKEDSTEHRHQTQGHRKEEDEDESDEDDHHVSRHGRQGYEEEE  343
+             G+  E+ D D+  ++ +    + E        + ++D      D  + +    Q    EE
+Sbjct  908   GNPTEEPDQDNPTEEPDQTIPAEEPAQNNPTEKPDQDNPGKKPDQDNPTEEPDQNNPTEE  967
+
+Query  344   DDDDDDGDDDSTEHVHQAHRHRDHEHKDDEDDSEEDYHHVPSHGRQSHQN-EEEEDEAVS  402
+              D ++  +    ++  +   H +   K D+D+  E   H  +  +    N  EE D+   
+Sbjct  968   PDHNNPAEKPDQDNPTEKPDHNNPAEKPDQDNPTEKPDHNNTAEKPDQDNPTEEPDQYNP  1027
+
+Query  403   TEHWHQS  409
+             TE   Q+
+Sbjct  1028  TEKLEQN  1034
+
+
+>XP_073789948.1 uncharacterized protein mgab isoform X6 [Danio 
+rerio]
+Length=1458
+
+ Score = 35.8 bits (81),  Expect = 0.23, Method: Composition-based stats.
+ Identities = 46/247 (19%), Positives = 93/247 (38%), Gaps = 9/247 (4%)
+
+Query  166   GEEDDDDDGGEEEERVDVMEDSDDNEHQVHGHQSHSKERDELHHAHSHRHQGHSDDDDDD  225
+              EE D     EE ++    E  D N    +  Q++  E+   ++      Q +  D  D 
+Sbjct  794   AEEPDQTIPAEEPDQNKPTEKPDQNNPTKYPDQNNPTEKPAQNNPAEKPDQNNPTDKPDQ  853
+
+Query  226   GVSTEHGHQAHRYQDHEEEDDGD-SDEDSHTHR-VQGREDENDDEDGDSGEYRHHTQDHQ  283
+                TE   Q +  +  ++ +  +  D+++ T    Q    E  D++  +       +  Q
+Sbjct  854   NKPTEKPAQNNPAEKPDQNNPTEYPDQNNPTEEPAQNNPAEKPDQNNPT------EKPDQ  907
+
+Query  284   GHNEEQDDDDDDDDDDEDKEDSTEHRHQTQGHRKEEDEDESDEDDHHVSRHGRQGYEEEE  343
+             G+  E+ D D+  ++ +    + E        + ++D      D  + +    Q    EE
+Sbjct  908   GNPTEEPDQDNPTEEPDQTIPAEEPAQNNPTEKPDQDNPGKKPDQDNPTEEPDQNNPTEE  967
+
+Query  344   DDDDDDGDDDSTEHVHQAHRHRDHEHKDDEDDSEEDYHHVPSHGRQSHQN-EEEEDEAVS  402
+              D ++  +    ++  +   H +   K D+D+  E   H  +  +    N  EE D+   
+Sbjct  968   PDHNNPAEKPDQDNPTEKPDHNNPAEKPDQDNPTEKPDHNNTAEKPDQDNPTEEPDQYNP  1027
+
+Query  403   TEHWHQS  409
+             TE   Q+
+Sbjct  1028  TEKLEQN  1034
+
+
+>XP_073791197.1 voltage-dependent N-type calcium channel subunit 
+alpha-1B isoform X2 [Danio rerio]
+Length=1770
+
+ Score = 32.0 bits (71),  Expect = 3.9, Method: Composition-based stats.
+ Identities = 18/55 (33%), Positives = 29/55 (53%), Gaps = 5/55 (9%)
+
+Query  244  EDDGDSDEDSHTHRVQGREDENDDEDGDSGE---YRHHTQ--DHQGHNEEQDDDD  293
+            + DGD+ E       Q +  +   E+GD+GE   +RHH+Q  ++QG  E  +  D
+Sbjct  910  DKDGDTSEGQPASNHQRKYHKCRGENGDTGEGRLHRHHSQNRENQGGLERSNSQD  964
+
+
+>XP_073772162.1 calcium channel, voltage-dependent, P/Q type, 
+alpha 1A subunit, b isoform X3 [Danio rerio]
+Length=2094
+
+ Score = 31.2 bits (69),  Expect = 6.6, Method: Composition-based stats.
+ Identities = 19/72 (26%), Positives = 27/72 (38%), Gaps = 12/72 (17%)
+
+Query  243  EEDDGDSDEDSHTHRVQGREDENDDEDGDSGEYRHHTQDHQGHNEEQDDDDDDDDDDEDK  302
+            +ED G+       H  +G     D EDG     R H   + G            D D  +
+Sbjct  888  DEDGGERGRKHRDHHSRGETAGGDAEDGQEKRQRRHRHANHG------------DGDGRR  935
+
+Query  303  EDSTEHRHQTQG  314
+            E S  HR++ +G
+Sbjct  936  ERSRLHRNKKEG  947
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.130    0.398    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 14792413568
+
+
+  Database: zebrafish.1.protein.faa
+    Posted date:  Feb 27, 2026  8:42 PM
+  Number of letters in database: 46,657,243
+  Number of sequences in database:  56,203
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
