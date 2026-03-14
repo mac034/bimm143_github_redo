@@ -150,11 +150,11 @@ Lets have a peek at our structures after "fitting" or superposing:
 
 ```{r}
 library(bio3dview)
-view.pdbs(pdbs)
+#view.pdbs(pdbs)
 ```
 
 ```{r}
-view.pdbs(pdbs, colorScheme = "residue")
+#view.pdbs(pdbs, colorScheme = "residue")
 ```
 We can run functions like `rmsd()` or `rmsf()` and the best `pca()`
 ```{r}
