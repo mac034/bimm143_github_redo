@@ -12,11 +12,11 @@ Class02 [Sequence alignment fundamentals, algorithms and applications](lab02.pdf
 
 Class03 [Advanced sequence alignment and database searching](lab03.pdf)
 
-Class04 [Bioinformatics data analysis with R](Class04/Class04.pdf)
+Class04 [Bioinformatics data analysis with R](Class04/class04.pdf)
 
-Class05 [Data exploration and visualization in R](Class05/Class05.md)
+Class05 [Data exploration and visualization in R](Class05/class05.md)
 
-Class06 [Why, when and how of writing your own R functions](Class06/Class06.md)
+Class06 [Why, when and how of writing your own R functions](Class06/class06.md)
 
 Class07 [Introduction to machine learning for Bioinformatics 1](Class07/Class07.md)
 
