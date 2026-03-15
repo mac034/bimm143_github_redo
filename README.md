@@ -34,9 +34,7 @@ Class13 [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists
 
 Class14 [Project: RNA-Seq mini project](Class14/Class14.md)
 
-Class15 [Hands-on with Git and GitHub](Class15/Class15.md)
-
-Class16 [Essential UNIX for bioinformatics](Class16/Class16.md)
+Class16 [Essential UNIX for bioinformatics](Class16/unix_notes.md)
 
 Class17 [Analyzing sequencing data in the cloud](Class17/Class17.md)
 
