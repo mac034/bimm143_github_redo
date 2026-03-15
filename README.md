@@ -28,7 +28,7 @@ Class10 [Structural Bioinformatics (pt1)](Class10/class10.md)
 
 Class11 [Structural Bioinformatics (pt2 AlphaFold)](Class11/Class11.md)
 
-Class12 [Genome informatics and high throughput sequencing](Class12/Class12.md)
+Class12 [Genome informatics and high throughput sequencing](/Class12/Class12.md)
 
 Class13 [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists](Class13/Class13.md)
 
@@ -40,4 +40,4 @@ Class17 [Analyzing sequencing data in the cloud](Class17/Class17.md)
 
 Class18 [Project: Investigating pertussis resurgence mini-project](Class18/Class18.md)
 
-Class19 [Project: Cancer mutation analysis mini-project](Class19/lab19_copy)
+Class19 [Project: Cancer mutation analysis mini-project](/Class19/lab19_copy)
