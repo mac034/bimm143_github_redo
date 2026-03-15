@@ -20,11 +20,11 @@ Class06 [Why, when and how of writing your own R functions](Class06/class06.md)
 
 Class07 [Introduction to machine learning for Bioinformatics 1](Class07/Class07.md)
 
-Class08 [Project: Unsupervised learning mini-project](Class08/Class08.md)
+Class08 [Project: Unsupervised learning mini-project](Class08/class08.md)
 
 Class09 [Project: Candy mini-project](Class09/Class09.md)
 
-Class10 [Structural Bioinformatics (pt1)](Class10/Class10.md)
+Class10 [Structural Bioinformatics (pt1)](Class10/class10.md)
 
 Class11 [Structural Bioinformatics (pt2 AlphaFold)](Class11/Class11.md)
 
