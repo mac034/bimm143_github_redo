@@ -39,3 +39,7 @@ Class15 [Hands-on with Git and GitHub](Class15/Class15.md)
 Class16 [Essential UNIX for bioinformatics](Class16/Class16.md)
 
 Class17 [Analyzing sequencing data in the cloud](Class17/Class17.md)
+
+Class18 [Project: Investigating pertussis resurgence mini-project](Class18/Class18.md)
+
+Class19 [Project: Cancer mutation analysis mini-project](Class19/Class19.md)
