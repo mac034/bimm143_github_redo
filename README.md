@@ -26,7 +26,7 @@ Class09 [Project: Candy mini-project](Class09/Class09.md)
 
 Class10 [Structural Bioinformatics (pt1)](Class10/class10.md)
 
-Class11 [Structural Bioinformatics (pt2 AlphaFold)](Class11/Class11.qmd)
+Class11 [Structural Bioinformatics (pt2 AlphaFold)](Class11/Class_11.md)
 
 Class12 [Genome informatics and high throughput sequencing](/Class12/Class_12.md)
 
