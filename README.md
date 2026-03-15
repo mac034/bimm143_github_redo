@@ -32,7 +32,7 @@ Class12 [Genome informatics and high throughput sequencing](Class12/Class12.md)
 
 Class13 [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists](Class13/Class13.md)
 
-Class14 [Project: RNA-Seq mini project](Class14/Class14.md)
+Class14 [Project: RNA-Seq mini project](Class14/class14.md)
 
 Class16 [Essential UNIX for bioinformatics](Class16/unix_notes.md)
 
