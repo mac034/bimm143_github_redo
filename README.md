@@ -28,7 +28,7 @@ Class10 [Structural Bioinformatics (pt1)](Class10/class10.md)
 
 Class11 [Structural Bioinformatics (pt2 AlphaFold)](Class11/Class11.md)
 
-Class12 [Genome informatics and high throughput sequencing](Class12/Class12.md)
+Class12 [Genome informatics and high throughput sequencing](https://github.com/mac034/bimm143_github_redo/blob/main/Class12/Class12.md)
 
 Class13 [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists](Class13/Class13.md)
 
