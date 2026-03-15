@@ -4,9 +4,7 @@ author: "Matthew Chan (A18130675)"
 format: pdf
 
 ---
-
 ## Section 2: Initial RNA-seq analysis
-
 
 ```{r}
 datatable <- read.table("rs8067378_ENSG00000172058.6.txt",
@@ -15,12 +13,14 @@ head(datatable)
 ```
 
 Sample size per genotype
+
 ```{r}
 n_genotype <- table(datatable$geno)
 n_genotype
 ```
 
 Median expression per genotype
+
 ```{r}
 median_genotype <- tapply(datatable$exp, datatable$geno, median, na.rm = TRUE)
 median_genotype
