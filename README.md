@@ -40,4 +40,4 @@ Class17 [Analyzing sequencing data in the cloud](Class17/Class17.md)
 
 Class18 [Project: Investigating pertussis resurgence mini-project](Class18/Class18.md)
 
-Class19 [Project: Cancer mutation analysis mini-project](/Class19/lab19_copy)
+Class19 [Project: Cancer mutation analysis mini-project](/Class19/lab19_copy.pdf)
