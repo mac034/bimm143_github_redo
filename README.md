@@ -6,11 +6,11 @@ My portfolio from [BIMM 143 W26](https://bioboot.github.io/bimm143_W26/) at UCSD
 
 *Introductory classes*
 
-Class01 [Welcome to Bioinformatics]()
+Class01 [Welcome to Bioinformatics](lab01.pdf)
 
-Class02 [Sequence alignment fundamentals, algorithms and applications]()
+Class02 [Sequence alignment fundamentals, algorithms and applications](lab02.pdf)
 
-Class03 [Advanced sequence alignment and database searching]()
+Class03 [Advanced sequence alignment and database searching](lab03.pdf)
 
 Class04 [Bioinformatics data analysis with R](Class04/Class04.pdf)
 
